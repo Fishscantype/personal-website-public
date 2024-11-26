@@ -1,0 +1,271 @@
+body, h1, h2, p, a, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: none;
+    background-color: #EEE9DA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.st2 {
+    display: none;
+}
+
+header {
+    background-color: #6096B4;
+    color: #EEE9DA;
+    width: 100%;
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 25vh;
+    text-align: left;
+}
+
+header h2 {
+    font-size: 15vh;
+    text-align: right;
+}
+
+header p {
+    font-size: 3vh;
+    text-align: left;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.amb-image {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: -200px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.amb-image img {
+    min-width: 20vw;
+    min-height: 20vh;
+    max-width: 30vw;
+    max-height: 50vh;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    flex: 1;
+    max-width: fit-content;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 20vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 2;
+    height: 100%;
+}
+
+.grid-element {
+    white-space: pre-line;
+    max-width: 25vw;
+    overflow: hidden;
+    position: relative;
+    background-color: #bdcdd680;
+    color: #015B89;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tech, .qual, .service, .ai {
+    width: 25vw;
+    height: 27vh;
+    overflow: hidden;
+    width: 25vw;
+    height: 27vh;
+    cursor: pointer;
+    position: relative;
+    background-color: #bdcdd680;
+    color: #015B89;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.grid h2 {
+    background-color: #93BFCF80;
+    width: max-content;
+    min-width: 0vmax;
+    margin: -20px -20px 0px -20px;
+    padding: 5px; 
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    transition: background-color 0.1s ease;
+}
+
+.grid-button {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.1s ease;
+    transition: box-shadow 0.1s ease;
+    transition: transform 0.3s ease;
+}
+.grid-button:hover {
+    background-color: #bdcdd690;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transform: scale(1.01);
+}
+
+.grid-button:hover h2{
+    background-color: #93BFCFA0;
+}
+
+.back-button2 {
+    display: none;
+}
+
+.back-button1 {
+    position: fixed;
+    bottom: 15px;
+    left: 47.5%;
+    display: inline-block;
+    background-color: #6096B4E0;
+    color: #EEE9DA;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+}
+
+.back-button1:hover {
+    background-color: #6096B4;
+}
+
+.buttons {
+    position: fixed;
+    left: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    text-decoration: none;
+    width: 5vh;
+    fill: #6096B4E0;
+    transition: fill 0.1s ease;
+    transition: transform 0.3s ease;
+}
+
+.github:hover, .linkedin:hover, .tamu:hover {
+    fill: #6096B4;
+    transform: scale(1.05);
+}
+
+.menu {
+    display: none;
+}
+
+.menu-item {
+    display: none;
+}
+
+.main-content {
+    display: none;
+}
+
+.switch a {
+    left: 10px;
+    top: 50%;
+    z-index: 100; 
+    position: fixed;
+    display: inline-block;
+    width: 10vw;
+    height: 10vh;
+    background-image: url('images/st2/spqr.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.1s ease;
+    transition: transform 0.3s ease;
+}
+
+.switch a:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.credits {
+    background-color: #6096B4;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+.credits a, .credits p {
+    float: left;
+    display: block;
+    color: #EEE9DA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.embed, .embed:visited, .embed:active{
+    color: inherit;
+}
+
+.credits a:hover, .embed:hover {
+    text-decoration: underline;
+}
